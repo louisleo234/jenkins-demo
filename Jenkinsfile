@@ -1,7 +1,7 @@
 node('haimaxy-jnlp') {
     stage('Clone') {
         echo "1. Clone Stage"
-        git url: "https://github.com/cnych/jenkins-demo.git"
+        git url: "https://github.com/louisleo234/jenkins-demo.git"
         script {
             build_tag = sh(returnStdout: true, script: 'git rev-parse --short HEAD').trim()
         }
